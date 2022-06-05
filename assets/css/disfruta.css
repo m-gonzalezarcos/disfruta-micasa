@@ -1,0 +1,813 @@
+/* CSS UNIVERSAL */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700&display=swap');
+
+/* COMIENZO DE CSS */
+body {
+    font-size: 16px;
+}
+
+/* COMIENZO HEADER CLASS ENCABEZADO */
+.encabezado {
+    width: 100%;
+    background-color: #038CED;
+}
+
+.encabezado .contenedor {
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #038CED;
+    padding-bottom: 5px;
+}
+
+.contenedor .col-1 h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2.5em;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.contenedor .col-1 small {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.1em;
+    font-weight: 500;
+    color: #ffffff;
+    font-style: oblique;
+}
+
+.contenedor .col-2 i {
+    color: #ffffff;
+    font-size: 25px;
+    padding: 3px
+}
+/* CIERRE HEADER CLASS ENCABEZADO */
+
+
+/* COMIENZO DE NAVEGACIÓN E INFORMACIÓN */
+.menu {
+    width:100%;
+    margin: auto;
+    background-color: #036FBC;
+    position: sticky;
+    top: 0;
+    padding: 10px 0;  
+}
+
+.hamburguesa {
+    display: none;
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    margin: 0;
+    background-color: transparent;
+}
+
+.hamburguesa span {
+    display: block;
+    background-color: #ffffff;
+    height: 3px;
+    width: 28px;
+    margin: 10px auto;
+    border-radius: 2px;
+}
+
+.menu .enlaces-menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.enlaces-menu li {
+    list-style-type: none;
+    transition: 0.3s;
+    padding: 5px;
+}
+
+.enlaces-menu li a {
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+.enlaces-menu li a:hover {
+    color:#000000;
+}
+
+.enlaces-menu li:hover {
+    background-color: #FFB600;
+}
+
+/* COMIENZO DE INFORMACIÓN */ 
+.enlaces-menu i {
+    color:#ffffff; 
+}
+
+.enlaces-menu i a {
+    text-decoration: none;
+    color: #ffffff;
+}
+
+.enlaces-menu i a:hover {
+    text-decoration: underline;
+}
+
+.enlaces-menu i span {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+}
+/* CIERRE DE NAVEGACIÓN E INFORMACIÓN */
+
+/* COMIENZO DE BANNER PAGINA ASIDE */
+.background-casa {
+    background-image: url(../imagenes/banner_casa/entrada_casa.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    background-position: center top;
+    height: 450px;
+}
+
+/* CONTENIDO DE LA PÁGINA */
+.contenedor {
+    width: 70%;
+    margin: auto;
+}
+
+/* COMIENZO DE SECCIÓN BIENVENIDOS */
+.arriendo-casa {
+    margin-top: 60px;
+    background-color: #f6f6f6;
+    padding-bottom: 10px;    
+}
+
+.arriendo-casa h2 {
+    padding-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+    color: #036fbc;
+    text-align: center;
+}
+
+.arriendo-casa p {
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 10px;
+    font-weight: 400;
+    color: #000000;
+}
+/* CIERRE DE SECCIÓN BIENVENIDOS */
+
+/* COMIENZO DE SECCIÓN GALERÍA DE IMÁGENES */
+.galeria {
+    margin-top: 60px;
+    padding-bottom: 10px; 
+}
+
+.galeria h2 {
+    padding-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+    color: #036fbc;
+    text-align: center;   
+}
+
+.galeria .contenedor {
+    width: 100%;
+    padding-bottom: 5px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.contenedor .imagenes {
+    width: 33.3%;
+    padding-top:10px;
+    padding-left: 10px; 
+    padding-right: 10px; 
+}
+
+.galeria .imagenes img {
+    width: 100%;
+    max-width: 1280px;
+}
+/* CIERRE SECCIÓN GALERÍA DE IMÁGENES */
+
+/* COMIENZO DE SECCIÓN TABLA DE PRECIOS */
+.tabla {
+    margin-top: 60px;
+    padding-bottom: 10px;
+    background-color: #f6f6f6;
+}
+
+.tabla .precios {
+    border-collapse: collapse;
+    margin:auto;
+}
+
+.tabla .precios caption {
+    margin-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+    color: #036fbc;
+    text-align: center;
+}
+
+.tabla .precios caption {
+    padding-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+    color: #036fbc;
+    text-align: center;
+}
+
+.precios thead { 
+    background-color: #038CED; 
+    color:#fff;
+}
+
+.tabla .precios td, th {
+    border:2px #000 solid;
+    text-align: left;
+    padding: 15px;
+    font-weight: 400;
+    font-family: 'open sans', sans-serif;
+}
+
+tr th {
+    font-weight: 400;
+    font-family: 'open sans', sans-serif;
+}
+
+.precios td:hover {
+    background-color: #FFB600;
+}
+/* CIERRE DE SECCIÓN TABLA DE PRECIOS */
+
+/* COMIENZO DE SECCIÓN PREGUNTAS FRECUENTES */
+.faq {
+    margin-top: 60px;
+    padding-bottom: 10px;
+}
+
+.faq h2 {
+    padding-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+    color: #036fbc;
+    text-align: center;
+}
+.caja-acordeon {
+    margin-top: 20px;
+}
+
+.caja-acordeon .acordeon {
+    cursor: pointer;
+    padding: 15px;
+    width: 100%;
+    font-family: 'open sans', sans-serif;
+    font-weight: 400;
+    text-align: center;
+    color:#000;
+    transition: 0.4s all; 
+    border: 1px solid #000000;
+}
+
+.caja-acordeon .panel {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+    background-color: #f6f6f6;
+}
+
+.panel p {
+    padding: 10px;
+    font-family: 'open sans', sans-serif;
+    font-weight: 400;
+    text-align: justify-all;
+    line-height: 1.5em;
+    color:#000000;
+}
+
+.active, .acordeon:hover {
+    background-color: #ffd60c;  
+}
+
+.acordeon:after {
+    content: '\002B';
+    color: #000;
+    font-weight: bold;
+    float: right;
+    margin-left: 5px;
+}
+
+.active:after {
+    content: "\2212";
+}
+/* CIERRE DE SECCIÓN PREGUNTAS FRECUENTES */
+
+/*COMIENZO DE SECCIÓN CORREO */
+.formulario {
+    margin-top: 60px;
+    padding-bottom: 10px;
+    background-color: #f6f6f6;
+}
+
+.formulario h2 {
+    padding-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+    color: #036fbc;
+    text-align: center;
+}
+
+.formulario-contacto {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+
+.formulario-contacto label {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    display: block;
+    margin-left: 12.5%;
+}   
+
+.formulario-contacto input {
+    width: 75%;
+    padding: 10px;
+    margin: 20px auto; 
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    outline:none;
+    background-color: #E4E3E3;
+}
+
+.formulario-contacto input:hover {
+    outline: 1px solid #C92300;
+}
+
+.formulario-contacto textarea {
+    width: 75%;
+    min-width: 75%;
+    max-width: 75%;
+    margin: 20px auto;
+    padding: 10px;
+    height: 250px;
+    min-height: 250px;
+    max-height: 250px;
+    transition: 1s all;
+    border: none;
+    outline: none;
+    font-family: 'Open Sans', sans-serif;
+    background-color: #E4E3E3;
+}
+
+.formulario-contacto textarea:hover {
+    outline: 1px solid #C92300;
+}
+
+.formulario-contacto button {
+    width: 100px;
+    background-color: #FFB600;
+    margin-left: 12.5%;
+    padding: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 1.2em;
+    font-weight: 400;
+    text-align: left;
+    border: none;
+    outline: none;
+    transition: all 0.3s;
+}
+
+.formulario-contacto button:hover {
+    cursor: pointer;
+    background-color: rgb(255, 182, 0, 0.7);
+}
+/* CIERRE DE SECCIÓN CORREO */
+
+/* COMIENZO DIRECCIÓN */
+.direccion {
+    margin-top: 60px;
+    padding-bottom: 10px;
+}
+
+.direccion h2 {
+    padding-bottom: 20px;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 2em;
+    font-weight: 500;
+    color: #036fbc;
+    text-align: center;
+}
+
+.mapa {
+    width: 100%;
+    height: 550px;
+    margin-top: 20px;
+    padding-bottom: 80px;
+}
+/* CIERRE DIRECCIÓN */
+
+/* COMIENZO RESPUESTA DEL CORREO*/
+.formulario .formulario-contacto .mensaje-enviado {
+    padding: 2%;
+    border: none;
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 3%;
+    margin-left: 12%;
+    animation-name: zoom;
+    animation-duration: 0.5s;
+    background-color: rgba(0,0,0,0.8);
+    width: 75%;
+    color: #fff;
+    text-align: left;
+    position: relative;
+}
+
+@keyframes zoom{
+    from{transform: scale(0);}
+    to{transform: scale(1);}
+}
+
+.cierrame {
+    position: absolute;
+    top:0;
+    right: 5px;
+    cursor:pointer;
+    color: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.oculto {
+    display: none;
+}
+
+/* CIERRE RESPUESTA DEL CORREO */
+
+/* COMIEZO PIE DE PÁGINA*/
+.pie {
+    width: 100%;
+    background-color: #038CED;
+    padding: 10px 0;
+}
+
+.pie .contenedor {
+    width: 70%;
+}
+.pie small {
+    font-weight: 400;
+    font-family: 'Open sans', sans-serif;
+    color: #fff;
+    text-align: left;
+}
+/* CIERRE PIE DE PÁGINA */
+
+/* LINK RED SOCIAL WHATSAPP */
+.redsocial {
+	position: fixed;
+	right: 0;
+	bottom: 50px;
+	right: 10px;
+	padding: 0.5%;
+}
+
+.redsocial .fa-whatsapp {
+    font-size: 60px;
+	color: #00BB2D;
+	text-shadow: 0px 0px 5px #000000;
+}
+
+/* RECAPTCHA V3 OCULTARLO EN LOS NAVEGADORES */
+.grecaptcha-badge {
+    visibility: hidden;
+}
+
+/* MEDIA QUERYS DISPOSITIVOS MÓVILES*/
+
+@media screen and (min-width: 320px) and (max-width: 575px){
+.encabezado .contenedor {
+    justify-content: center;
+}
+
+.col-1 {
+    text-align: center;
+}
+    
+.contenedor .col-2 i {
+    display: none;
+}
+
+.hamburguesa {
+    display: block;
+    position: absolute;
+    top: 0;
+    left:10px;
+}
+
+.menu {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 0;
+}
+
+.menu .enlaces-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 25px;
+    display: none;
+    opacity:0;   
+}
+
+.menu .enlaces-menu li {
+    width: 100%;
+    margin: 0;
+}
+
+.enlaces-menu i {
+    margin: 5px 0;
+    padding: 5px;
+    width: 100%;
+}
+
+.enlaces-menu i:hover {
+    background-color: #038CED;
+    color: #000000;
+    cursor:default;
+}
+
+.enlaces-menu i a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+@keyframes mostrarmenu {
+    from{opacity:0;}
+    to{opacity:1;}  
+}
+.menu .enlaces-menu.activado {
+    display: flex;
+    animation: mostrarmenu 350ms ease-in-out both;
+}
+
+.contenedor .imagenes {
+    width: 100%;
+}
+
+.mapa {
+    padding-bottom: 40px;
+}
+
+.pie {
+    text-align: center;
+}
+
+.redsocial .fa-whatsapp {
+    font-size: 40px;
+}
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px){
+.encabezado .contenedor {
+    justify-content: center;
+}
+    
+.col-1 {
+    text-align: center;
+}
+
+.contenedor .col-2 i {
+    display: none;
+}
+
+.hamburguesa {
+    display: block;
+    position: absolute;
+    top:0;
+    left:10px;
+}
+
+.menu {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 0;
+}
+
+.menu .enlaces-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 25px;
+    display: none;
+    opacity:0;   
+}
+
+.menu .enlaces-menu li {
+    width: 100%;
+    margin: 0;
+}
+
+.enlaces-menu i {
+    margin: 5px 0;
+    padding: 5px;
+    width: 100%;
+}
+
+.enlaces-menu i:hover {
+    background-color: #038CED;
+    color: #000000;
+    cursor:default;
+}
+
+.enlaces-menu i a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+
+@keyframes mostrarmenu {
+    from{opacity:0;}
+    to{opacity:1;}  
+}
+.menu .enlaces-menu.activado {
+    display: flex;
+    animation: mostrarmenu 350ms ease-in-out both;
+}
+
+.contenedor .imagenes {
+    width: 50%;
+}
+
+.mapa {
+    padding-bottom: 50px;
+}
+
+.pie {
+    text-align: center;
+}
+
+.redsocial .fa-whatsapp {
+    font-size: 45px;
+}
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px){
+.encabezado .contenedor {
+    justify-content: center;
+}
+        
+.col-1 {
+    text-align: center;
+}
+
+.hamburguesa {
+    display: block;
+    position: absolute;
+    top:0;
+    left:10px;
+}
+
+.menu {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 25px 0;
+}
+
+.menu .enlaces-menu {
+    flex-direction: column;
+    align-items: flex-start;
+    margin-top: 25px;
+    display: none;
+    opacity:0;   
+}
+
+.menu .enlaces-menu li {
+    width: 100%;
+    margin: 0;
+}
+
+.enlaces-menu i {
+    margin: 5px 0;
+    padding: 5px;
+    width: 100%;
+}
+
+.enlaces-menu i:hover {
+    background-color: #038CED;
+    color: #000000;
+    cursor:default;
+}
+
+.enlaces-menu i a:hover {
+    text-decoration: none;
+    color: #000000;
+}
+    
+@keyframes mostrarmenu {
+    from{opacity:0;}
+    to{opacity:1;}  
+}
+
+.menu .enlaces-menu.activado {
+    display: flex;
+    animation: mostrarmenu 350ms ease-in-out both;
+}
+
+.contenedor .col-2 i {
+    display: none;
+}
+
+.contenedor .imagenes {
+    width: 50%;
+}
+
+.mapa {
+    padding-bottom: 60px;
+}
+
+.redsocial .fa-whatsapp {
+    font-size: 50px;
+}
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px){
+    .hamburguesa {
+        display: block;
+        position: absolute;
+        top:0;
+        left:10px;
+    }
+    
+    .menu {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 25px 0;
+    }
+    
+    .menu .enlaces-menu {
+        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 25px;
+        display: none;
+        opacity:0;   
+    }
+    
+    .menu .enlaces-menu li {
+        width: 100%;
+        margin: 0;
+    }
+    
+    .enlaces-menu i {
+        margin: 5px 0;
+        padding: 5px;
+        width: 100%;
+    }
+    
+    .enlaces-menu i:hover {
+        background-color: #038CED;
+        color: #000000;
+        cursor:default;
+    }
+
+    .enlaces-menu i a:hover {
+        text-decoration: none;
+        color: #000000;
+    }
+    
+@keyframes mostrarmenu {
+    from{opacity:0;}
+    to{opacity:1;}  
+}
+
+.menu .enlaces-menu.activado {
+    display: flex;
+    animation: mostrarmenu 350ms ease-in-out both;
+}
+
+.contenedor .imagenes {
+    width: 33.3%;
+}
+.mapa {
+    padding-bottom: 70px;
+}
+
+.redsocial .fa-whatsapp {
+    font-size: 55px;
+}
+}
+
+
